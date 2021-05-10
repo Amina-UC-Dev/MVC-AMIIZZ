@@ -85,6 +85,8 @@ class _LoginScreenState extends StateMVC<LoginScreen> {
                         borderSide: BorderSide(color: Colors.red)
                     ),
                   labelText: "Username"
+                    // email label
+                 // labelText: "Username"
                 ),
               ),
               SizedBox(height: 15,),

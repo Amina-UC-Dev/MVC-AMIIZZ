@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
 import 'package:mvc_pattern_amiizz_tutorial/REPOSITORY_API/repo.dart' as repo;
 import  'package:flutter/src/widgets/framework.dart' as s;
+
 class AmiizController extends ControllerMVC {
 
   GlobalKey<ScaffoldState> scaffoldKey;
