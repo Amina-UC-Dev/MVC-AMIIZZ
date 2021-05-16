@@ -15,7 +15,7 @@ class _LoginScreenState extends StateMVC<LoginScreen> {
     _con = controller;
   }
 
-  TextEditingController _email = TextEditingController();
+  TextEditingController _username = TextEditingController();
   TextEditingController _password = TextEditingController();
 
   bool autovalidate = false;
@@ -29,7 +29,7 @@ class _LoginScreenState extends StateMVC<LoginScreen> {
     else{
       form.save();
       print("Success #############");
-      _con.signIn(context,_email.text, _password.text);
+      _con.signIn(context,_username.text, _password.text);
     }
   }
 
@@ -66,7 +66,7 @@ class _LoginScreenState extends StateMVC<LoginScreen> {
                     return 'Please Enter Valid Email !!!';
                   return null;*/
                 },
-                controller: _email,
+                controller: _username,
                 decoration: InputDecoration(
                     enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(6),

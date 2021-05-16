@@ -13,3 +13,27 @@ Future signInRepo(username,password) async {
   var data = json.decode(res.body);
   return data;
 }
+
+Future getStatics(staff) async {
+  final response = await http.get(
+    Uri.encodeFull("https://carecanadajobs.com/public/api/staff_statistics?staff_id="+staff.toString()),
+  );
+  var qData = json.decode(response.body);
+  return qData;
+}
+
+Future getAboutInfoRepo(staff) async {
+  final response = await http.get(
+    Uri.encodeFull("https://carecanadajobs.com/public/api/profile?user_id="+staff.toString()),
+  );
+  var qData = json.decode(response.body);
+  return qData;
+}
+
+Future getAvailabilityRepo(staff) async {
+  final response = await http.get(
+    Uri.encodeFull("https://carecanadajobs.com/public/api/availabilities?user_id="+staff.toString()),
+  );
+  var qData = json.decode(response.body);
+  return qData;
+}
