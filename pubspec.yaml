@@ -32,7 +32,7 @@ dependencies:
   http:
   fluttertoast: ^7.0.1
   intl:
-
+  image_picker: ^0.6.7+4
 
 
 dev_dependencies:
